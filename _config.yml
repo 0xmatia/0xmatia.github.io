@@ -1,0 +1,27 @@
+title: Elad Matia Blog
+markdown: kramdown
+url: "0xmatia.github.io"
+
+author:
+  name: Elad Matia
+  email: elad.matia@gmail.com
+
+plugins:
+  - jemoji
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+collections_dir: all_collections
+collections:
+  posts:
+    output: true
+
+url: https://0xmatia.github.io
+defaults:
+  - scope:
+      path: "_posts"
+    values:
+      layout: "post"
+      permalink: /posts/:title/
+exclude: ["sitemap.xml", "feed.xml", "LICENSE", "README.md"]
